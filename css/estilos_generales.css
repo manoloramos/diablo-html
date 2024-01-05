@@ -1,0 +1,70 @@
+* {
+	cursor: url('../resource/cursor/cursor.png'), pointer;
+}
+
+body, html{
+	margin: 0;
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'AvQuest';
+
+	src: url('../resource/fonts/avqest-webfont.woff2') format('woff2'),
+		 url('../resource/fonts/avqest-webfont.woff') format('woff');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+.textoh1-index{
+	font-family: AvQuest;
+	color: #DFCF99;
+	font-size: 3.5rem;
+}
+
+.textoh1-index:hover{
+	color: #c5a26a;
+}
+
+.texto-general{
+	font-family: AvQuest;
+	color: #DFCF99;
+	font-size: 1.5rem;
+}
+
+#boton_entrar:hover{
+	filter: brightness(125%);
+}
+
+.img-pj-portada{
+	filter:brightness(190%);
+}
+
+.img-monstruo:hover{
+	filter:brightness(200%);
+}
+
+.static-gif{
+	position: absolute;
+	background: transparent;
+}
+
+.static-gif:hover{
+	opacity: 0;
+}
+
+.gif{
+	opacity: 1;
+}
+
+.div-monstruo{
+	max-width: 50%;
+	position: relative;
+	display: inline-block;
+}
+
+.cajon-monstruos{
+	position: relative;
+
+}
