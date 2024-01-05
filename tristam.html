@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Diablo HTML - Tristán</title>
+	
+	<!--Estilos generales-->
+	<link rel="stylesheet" href="css/estilos_generales.css">
+
+	<!--CSS fondo-->
+	<link rel="stylesheet" href="css/fondo.css">
+
+	<!--CSS animaciones-->
+	<link rel="stylesheet" href="css/animaciones.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="resource/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="resource/favicon/favicon.ico" type="image/x-icon">
+
+	<!--JQuery y JS-->
+	<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/controles-musica.js"></script>
+</head>
+<body>
+
+	<div class="contenedor-tristam"> <!--Div contenedor del cuerpo de la web, fondo-->
+		<!--Parar musica de fondo-->
+		<button style="background: none; border: none; position: fixed" id="boton_sonido"><img src="resource/img/png/mute.png" height="32px" width="32px" alt="Silenciar sonido"/>
+
+		<div align="center" style="margin: 0 auto">
+			<div style="display: inline-block;">
+				<div style="display: inline-block; margin-top: 3rem">
+					<img src="resource/img/gif/llamas.gif" alt="">
+				</div>
+
+				<p class="texto-general textoDesvanecer" style="animation-delay: -0.1s">La historia toma parte en el mundo de Santuario, en la antesala de un conflicto entre los reinos del Cielo y el Infierno</p>
+				<p class="texto-general textoDesvanecer" style="animation-delay: -0.2s">Hordas de monstruos infernales parecen emerger del interior de la antigua catedral en la ciudad de Tristán</p>
+				<p class="texto-general textoDesvanecer" style="animation-delay: -0.3s">Deberás asumir el papel de héroe y descender a los mismísimos infiernos abrasadores para derrotar a Diablo, el Señor del Terror</p>
+				<p class="texto-general textoDesvanecer" style="animation-delay: -0.4s">Buena suerte, Nephalem...</p>
+
+				<br><br><br>
+
+				<p class="texto-general textoDesvanecer" style="animation-delay: -1s">A lo largo de este recorrido conocerás a algunos de los horrores que deambulan por las tierras de Santuario,</p>
+				<p class="texto-general textoDesvanecer" style="animation-delay: -1s">así como a los héroes elegidos para hacerles frente. También podrás deleitarte con algunas de </p>
+				<p class="texto-general textoDesvanecer" style="animation-delay: -1s">las composiciones músicales que te acompañarán en esta aventura hacia las profundidades del infierno.</p>
+
+			</div>
+		</div>
+
+		<!--Cajón de monstruos introducción-->
+		<div class="cajon-monstruos" align="center" style="margin: 0 auto;">
+
+			<div class="div-monstruo">
+				<!--<img class="static-gif" src="resource/img/png/monsters/19.png">-->
+				<img class="gif" src="resource/img/gif/monsters/5.gif">
+			</div>
+
+			<div class="div-monstruo">
+				<!--<img class="static-gif" src="resource/img/png/monsters/1.png">-->
+				<img class="gif" src="resource/img/gif/monsters/8.gif">
+			</div>
+
+			<div class="div-monstruo">
+				<!--<img class="static-gif" src="resource/img/png/monsters/1.png">-->
+				<img class="gif" src="resource/img/gif/monsters/1.gif">
+			</div>
+
+			<div class="div-monstruo">
+				<!--<img class="static-gif" src="resource/img/png/monsters/1.png">-->
+				<img class="gif" src="resource/img/gif/monsters/11.gif">
+			</div>
+
+			<div class="div-monstruo">
+				<!--<img class="static-gif" src="resource/img/png/monsters/4.png">-->
+				<img class="gif" src="resource/img/gif/monsters/17.gif">
+			</div>
+
+			<div class="div-monstruo">
+				<!--<img class="static-gif" src="resource/img/png/monsters/15.png">-->
+				<img class="gif" src="resource/img/gif/monsters/22.gif">
+			</div>
+
+		</div>
+
+		<br><br><br><br><br><br><br>
+
+		<!--DIV monstruos-->
+		<div align="center" style="margin: 0 auto">
+
+			<div>
+				<img style="display: inline-block" src="resource/img/gif/pent.gif" alt="Error">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 3.5rem; display: inline-block">Criaturas de Santuario</p>
+				<img style="display: inline-block" src="resource/img/gif/pent.gif" alt="Error">
+				<p id="descMonstruos" style="font-family: AvQuest; color: #DFCF99; font-size: 1.5rem;">Los esbirros y secuaces de Diablo se cuentan por cientos. Esta es una pequeña muestra </p>
+				<p id="descMonstruos2" style="font-family: AvQuest; color: #DFCF99; font-size: 1.5rem;">de los horrores a los que te tendrás que enfrentar en tu camino por Santuario.</p>
+
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Andariel</p>
+				<img id="andariel" class="img-monstruo img-snd" src="resource/img/gif/bosses/andariel.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Mephisto</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/bosses/mephisto.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Diablo</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/bosses/diablo.gif" alt="error">
+			</div>
+
+		</div>
+
+		<!--DIV monstruos 2-->
+		<div align="center" style="margin: 0 auto; margin-top: 2rem">
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Yeti</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/monsters/yeti.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Guardián</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/monsters/guardian.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block; margin-left: 1rem">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Esqueleto</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/monsters/eske.gif" alt="error">
+			</div>
+
+		</div>
+
+		<!--DIV personajes-->
+		<div align="center" style="margin: 0 auto">
+
+			<div>
+				<img style="display: inline-block" src="resource/img/gif/pent.gif" alt="Error">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 3.5rem; display: inline-block">Héroes Nephalem</p>
+				<img style="display: inline-block" src="resource/img/gif/pent.gif" alt="Error">
+				<p id="descPersonajes" style="font-family: AvQuest; color: #DFCF99; font-size: 1.5rem;">En los tiempos más oscuros es cuando la luz brilla con más fuerza. Estos son algunos </p>
+				<p id="descPersonajes2" style="font-family: AvQuest; color: #DFCF99; font-size: 1.5rem;">de los héroes que se han unido para poner fin al reino de terror de Diablo. </p>
+
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Guerrero</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/warrior.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Arpía</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/rogue.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Mago</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/mago.gif" alt="error">
+			</div>
+
+		</div>
+
+		<!--DIV personajes 2-->
+		<div align="center" style="margin: 0 auto; margin-top: 2rem">
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Bárbaro</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/barba.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Hechicera</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/maga.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block; margin-left: 1rem">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Amazona</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/ama.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block; margin-left: 1rem">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Nigromante</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/nigro.gif" alt="error">
+			</div>
+
+			<div style="display: inline-block; margin-left: 1rem">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Paladín</p>
+				<img class="img-monstruo img-snd" src="resource/img/gif/chars/pala.gif" alt="error">
+			</div>
+
+		</div>
+
+		<!--DIV música-->
+		<div align="center" style="margin: 0 auto">
+
+			<div>
+				<img style="display: inline-block" src="resource/img/gif/pent.gif" alt="Error">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 3.5rem; display: inline-block">Stay awhile and listen...</p>
+				<img style="display: inline-block" src="resource/img/gif/pent.gif" alt="Error">
+				<p id="descMusica" style="font-family: AvQuest; color: #DFCF99; font-size: 1.5rem;">Escucha algunas de las piezas musicales que dan identidad a la oscura atmósfera de Santuario.</p>
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">La catedral</p>
+				<audio controls id="mus1" src="resource/music/musd1dungeon.mp3"/>
+			</div>
+
+			<div style="display: inline-block;">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">Las llanuras</p>
+				<audio controls id="mus2" src="resource/music/musd22.mp3"/>
+			</div>
+
+			<div style="display: inline-block; margin-bottom: 5rem">
+				<p style="font-family: AvQuest; color: #DFCF99; font-size: 2rem;">El campamento</p>
+				<audio controls id="mus3" src="resource/music/musd21.mp3"/>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--Música de fondo-->
+	<audio id="mus_fondo" src="resource/music/tristam.mp3" autoplay loop/>
+	<audio id="sonido" src="resource/sounds/ui/titlemov.wav" preload="auto"/>
+
+</body>
+</html>

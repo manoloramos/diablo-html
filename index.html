@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos_video.css">
+	<link rel="stylesheet" href="css/estilos_generales.css">
+	
+	<!--Favicon-->
+	<link rel="shortcut icon" href="resource/favicon/faviconHD.ico" type="image/x-icon">
+	<link rel="icon" href="resource/favicon/faviconHD.ico" type="image/x-icon">
+
+	<!--JQuery y JS-->
+	<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+
+	<title>Diablo HTML</title>
+</head>
+<body>
+	
+	<!--Contenedor del contenido de la página principal-->
+	<div class="contenedor-fondo-video">
+		<button id="boton_sonido" style="background: none; border: none"><img src="resource/img/png/mute.png" height="32px" width="32px" alt="Silenciar sonido"/></button>
+
+		<div align="center" style="margin: 0 auto">
+			<img src="resource/img/gif/llamas.gif"><h1 style="font-family: AvQuest; color: #DFCF99; font-size: 3.5rem;">en HTML</h1>
+			<img class="img-pj-portada" width="200px" height="200px" src="resource/img/gif/chars/pala.gif">
+			<img class="img-pj-portada" width="200px" height="200px" src="resource/img/gif/chars/ama.gif">
+			<img class="img-pj-portada" width="200px" height="200px" src="resource/img/gif/chars/barba.gif">
+
+			<div>
+				<img src="resource/img/gif/pent.gif" alt="Error">
+				<a id="boton_entrar" href="tristam.html" style="text-decoration: none"><img style="margin-top: 5rem" src="resource/img/entrar.png" alt="Error"/></a>
+				<img src="resource/img/gif/pent.gif" alt="Error">
+			</div>
+		</div>
+
+		<!--Div que actuará como una capa difuminada sobre del video-->
+		<div class="overlay-video"></div>
+			<video autoplay muted loop id="video_fondo">
+				<source src="resource/video/video_background.mp4" type="video/mp4">
+				Tu navegador no soporta video HTML5.
+			</video>
+
+		<!--Música de fondo-->
+		<audio id="mus_fondo" src="resource/music/intro.mp3" autoplay loop/>
+		<audio id="sonido" src="resource/sounds/ui/titlslct.wav" preload="auto"/>
+
+	</div>
+
+	<script>
+		var elsonido = $("#sonido")[0];
+
+		$("#boton_entrar").click(function a(){
+			elsonido.play();
+		});
+
+		var pararMusica = $("#boton_sonido");
+
+   		pararMusica.click(function () {
+			var bool = $("#mus_fondo").prop("muted");
+			$("#mus_fondo").prop("muted", !bool);
+		});
+	</script>
+</body>
+</html>
